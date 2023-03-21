@@ -1,7 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Counter = () => {
     const [value, setValue] = useState(0);
+
+    useEffect(() => {
+        console.log('랜더링이 완료되었습니다!');
+    }, []);
+
+    useEffect(() => {
+        console.log('값 변경 : ' + value);
+        return() => {
+            console.log('클린업 : ' + value);
+        }
+    }, [value]);
+
     return (
         <div>
             <p>
