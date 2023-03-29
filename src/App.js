@@ -4,19 +4,12 @@ import {Fragment} from "react";
 import Info from "./component/Info";
 import ContextSample from "./component/ContextSample";
 import Average from "./component/Average";
+import SignUp from "./component/SignUp";
 
 const App = () => {
   return (
       <Fragment>
-          <Counter/>
-          <br/>
-          <Info/>
-          <br/>
-          <ContextSample/>
-          <br/>
-          ==================
-          <br/>
-          <Average/>
+          <SignUp/>
       </Fragment>
   );
 };
